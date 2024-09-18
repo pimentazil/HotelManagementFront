@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  font-family: 'Poppins', 'Courier New', Courier, monospace;
+}
+
+:root {
+  --white-color: #fff;
+  /* --background-color: #202020; */
+  --background-color: white;
+  --background-color2: #f5f5f5;
+  --background-color-div: #fff;
+  --black-color: black;
+  --blue-color: rgb(0, 149, 246);
+  --2-blue-color: rgb(1, 129, 214);
+  --blue-h1-home: rgb(7, 127, 207);
+  --gray-color: rgba(67,66,66,0.15);
+  --1-gray-color: #7a7a7a;
+  --2-gray-color: #393a41;
+  --3-gray-color: #2f3037;
+  --4-gray-color: #26262c;
+  --5-gray-color: #1e1e21;
+  --border-color: #ffffff1a;
+  --div-chat-color: #1d1d1d;
+  --color-purple-hover: rgb(0, 149, 246);
+  --paragrafos-color: #333;
+}
+
+a{
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--black-color);
+  font-family: 'Poppins', BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background-color);
+}
+
+
+::-webkit-scrollbar{
+  width: 7px;
+  background-color: var(--5-gray-color);
+  border: none;
+}
+::-webkit-scrollbar-thumb{
+  background-color: var(--white-color);
+  border-radius: 50px;
+  height: 10vh;
+}

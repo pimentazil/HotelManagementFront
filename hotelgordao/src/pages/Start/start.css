@@ -1,0 +1,340 @@
+.backgroundImage {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(../../images/fundo.jpg);
+    background-size: cover;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.backgroundHome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    padding-left: 8%;
+    padding-top: 0vh;
+    gap: 0%;
+}
+
+.backgroundHome .content {
+    z-index: 1;
+}
+
+.backgroundHome h1 {
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 25%;
+    color: white;
+    text-align: left;
+}
+
+.backgroundHome h1 span {
+    color: var(--blue-color);
+}
+
+.backgroundHome .paragrafo {
+    font-size: 20px;
+    width: 49%;
+}
+
+.backgroundHome h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#quem-somos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8% 0 4% 0;
+    border-top: 1px solid;
+    border-color: var(--border-color);
+    text-align: center;
+}
+
+#quem-somos h2 {
+    color: #6c757d;
+    font-size: 17px;
+    width: 60%;
+    margin: 0 auto;
+    text-align: justify;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#quem-somos h1 {
+    margin-top: 3% !important;
+    color: var(--blue-h1-home);
+    border: 4px solid var(--blue-color);
+    font-size: 1.6rem;
+    padding: 5px 22px;
+    margin: 0 0 3%;
+    transition: .3s ease;
+}
+
+#quem-somos h1:hover {
+    box-shadow: 0px 0px 30px var(--blue-color);
+}
+
+#quem-somos h3 {
+    color: #6c757d;
+    font-size: 17px;
+    width: 60%;
+    margin: 0 auto;
+    text-align: justify;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#nosso-proposito {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8% 7% 5% 5%;
+    border-top: 1px solid;
+    border-color: var(--border-color);
+}
+
+#nosso-proposito .codeString {
+    width: 50%;
+    font-size: 1.5rem;
+    font-family: 'Fira Code';
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+#nosso-proposito .codeString:hover {
+    text-shadow: 0px 0px 15px var(--white-color);
+}
+
+#nosso-proposito .codeString span {
+    padding-left: 3%;
+}
+
+#nosso-proposito div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+
+#nosso-proposito div h1 {
+    color: var(--blue-h1-home);
+    border: 4px solid var(--blue-color);
+    font-size: 1.6rem;
+    padding: 5px 22px;
+    margin: 0 0 3%;
+    transition: .3s ease;
+}
+
+#nosso-proposito div h1:hover {
+    box-shadow: 0px 0px 30px var(--blue-color);
+}
+
+#nosso-proposito div h3 {
+    color: #6c757d;
+    font-size: 17px;
+    width: 60%;
+    margin: 0 auto;
+    text-align: justify;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.estadia {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    flex-direction: column;
+    padding: 40px 20px;
+}
+
+.hotel-ideal {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hotel-ideal:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.hotel-ideal img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.hotel-ideal h2 {
+    font-size: 1.5rem;
+    color: var(--blue-color);
+    padding: 15px;
+    margin: 0;
+}
+
+.hotel-ideal h3 {
+    font-size: 1rem;
+    color: #555;
+    padding: 0 15px 15px;
+    text-align: justify;
+    margin: 0;
+}
+
+
+/* Estilos gerais para o container principal */
+.div-start {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* start.css */
+
+/* Estilos gerais para o container principal */
+.div-start {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Estilos para a seção de cadastro */
+#cadastro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    margin: 40px auto;
+    width: 80%;
+    max-width: 800px;
+}
+
+#cadastro h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: var(--paragrafos-color);
+    flex: 1;
+    text-align: left;
+    margin-right: 10%;
+    font-weight: 500;
+}
+
+#cadastro h1 b {
+    font-weight: bold;
+}
+
+#cadastro form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#cadastro label {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+#cadastro input[type="text"],
+#cadastro input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    border-radius: 0;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+#cadastro input[type="text"]:focus,
+#cadastro input[type="email"]:focus {
+    border-bottom: 2px solid #000;
+}
+
+#cadastro button {
+    width: 106%;
+    margin-top: 5%;
+    padding: 12px;
+    font-size: 18px;
+    color: var(--white-color);
+    background-color: var(--blue-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#cadastro button:hover {
+    background-color: var(--2-blue-color); /* Cor do botão ao passar o mouse */
+}
+
+@media (max-width: 768px) {
+    .backgroundHome h1 {
+        font-size: 2.5rem;
+    }
+
+    #quem-somos h2,
+    #quem-somos h3 {
+        font-size: 0.875rem; /* Ajusta o tamanho da fonte para dispositivos móveis */
+    }
+
+    #cadastro {
+        padding: 20px;
+    }
+
+    #cadastro h1 {
+        font-size: 1.25rem;
+    }
+
+    #cadastro form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .backgroundHome h1 {
+        font-size: 1.75rem;
+    }
+
+    #quem-somos h2,
+    #quem-somos h3 {
+        font-size: 0.75rem;
+    }
+
+    #cadastro {
+        padding: 10px;
+    }
+
+    #cadastro h1 {
+        font-size: 1rem;
+    }
+
+    #cadastro input[type="text"],
+    #cadastro input[type="email"] {
+        padding: 8px;
+        font-size: 0.875rem;
+    }
+
+    #cadastro button {
+        font-size: 0.875rem;
+        padding: 10px;
+    }
+}
+

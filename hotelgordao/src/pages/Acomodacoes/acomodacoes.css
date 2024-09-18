@@ -1,0 +1,133 @@
+.div-acomodacoes h1 {
+    margin-top: 8%;
+    text-align: center;
+    color: var(--paragrafos-color);
+    font-weight: 500;
+    font-size: 38px;
+}
+
+.div-acomodacoes {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-acomodacoes p {
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    color: var(--paragrafos-color);
+}
+
+.galleryy {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+    padding: 20px;
+}
+
+.galleryy-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    overflow: hidden; 
+    cursor: pointer;
+}
+
+.galleryy-item img {
+    width: 90%;
+    height: 200px; 
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.galleryy-item:hover img {
+    transform: scale(1.05); 
+}
+
+.infoo {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.room-name {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--paragrafos-color);
+    font-weight: 500;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--2-blue-color);
+}
+
+.btnDeletar {
+    background-color: #E57373;
+    margin: 5px;
+}
+
+.btnDeletar:hover {
+    background-color: #cc6666;
+}
+
+@media (max-width: 1024px) {
+    .galleryy {
+        grid-template-columns: repeat(3, 1fr); /* Ajusta o número de colunas em telas menores */
+    }
+
+    .div-acomodacoes p {
+        margin-left: 10%;
+        margin-right: 10%; /* Ajusta as margens do parágrafo */
+    }
+
+    .div-acomodacoes h1 {
+        font-size: 32px; /* Reduz o tamanho da fonte do título */
+        margin-top: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .galleryy {
+        grid-template-columns: repeat(2, 1fr); /* Ajusta o número de colunas para duas em telas menores */
+    }
+
+    .galleryy-item img {
+        height: 150px; /* Reduz a altura das imagens */
+    }
+
+    .div-acomodacoes p {
+        margin-left: 5%;
+        margin-right: 5%; /* Ajusta ainda mais as margens em telas pequenas */
+    }
+
+    .div-acomodacoes h1 {
+        font-size: 28px; /* Reduz ainda mais o tamanho da fonte do título */
+    }
+}
+
+@media (max-width: 480px) {
+    .galleryy {
+        grid-template-columns: 1fr; /* Ajusta para uma coluna em telas muito pequenas */
+    }
+
+    .div-acomodacoes p {
+        margin-left: 2%;
+        margin-right: 2%; /* Reduz as margens para muito pequenas em telas pequenas */
+    }
+
+    .div-acomodacoes h1 {
+        font-size: 24px; /* Ajusta o tamanho da fonte do título para telas pequenas */
+    }
+}

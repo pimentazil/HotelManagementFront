@@ -1,0 +1,283 @@
+.div-suite h1 {
+    margin-top: 8%;
+    text-align: center;
+    color: var(--paragrafos-color);
+    font-weight: 500;
+    font-size: 38px;
+}
+
+.div-suite {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-suite p {
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    color: var(--paragrafos-color);
+}
+
+.icones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+    background-color: rgba(246, 246, 246, 1);
+    color: white;
+}
+
+.icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    font-size: 24px;
+    color: var(--paragrafos-color);
+    flex-basis: calc(25% - 40px); 
+    box-sizing: border-box; 
+}
+
+.icon-item span {
+    margin-top: 8px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+.gallery2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery2-item {
+    overflow: hidden;
+    position: relative;
+    height: 300px;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.gallery2-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery2-item:hover {
+    border-color: white; /* Borda branca ao passar o cursor */
+}
+
+.gallery2-item:hover img {
+    transform: scale(1.1); /* Zoom leve */
+}
+
+.gallery2-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.4); 
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery2-item:hover::before {
+    opacity: 1; 
+}
+
+
+.div-reservar {
+    color: black; 
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    margin: 40px 20%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.div-reservar h1 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: 500;
+    color: var(--paragrafos-color); 
+}
+
+.div-reservar h1 b {
+    color: var(--blue-color);
+}
+
+.div-reservar p {
+    font-size: 17px;
+    margin: 10px 0;
+    color: var(--paragrafos-color); 
+}
+
+.div-reservar input[type="date"] {
+    margin: 20px 0;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid var(--input-border-color);
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.div-reservar input[type="date"]:focus {
+    outline: none;
+    border-color: var(--blue-color);
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+.div-reservar button {
+    color: white;
+    background-color: var(--blue-color);
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 20px;
+}
+
+.div-reservar button:hover {
+    background-color: var(--2-blue-color);
+    color: white;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .div-reservar {
+        margin: 20px 10%;
+    }
+
+    .div-reservar input[type="date"],
+    .div-reservar button {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .div-suite p {
+        padding: 0 5%;
+    }
+
+    .gallery2 {
+        padding: 15px;
+    }
+
+    .gallery2-item {
+        height: 180px;
+    }
+
+    .div-reservar {
+        margin: 20px 5%;
+    }
+
+    .icon-item {
+        font-size: 20px; /* Reduza o tamanho dos ícones para dispositivos móveis */
+        flex-basis: 25%; /* Ajuste a largura dos ícones */
+    }
+}
+
+@media (max-width: 480px) {
+    .div-suite h1 {
+        font-size: 28px;
+        margin-top: 50%;
+    }
+
+    .icon-item {
+        font-size: 18px; /* Reduza ainda mais o tamanho dos ícones para dispositivos menores */
+        flex-basis: 33%; /* Ajuste a largura dos ícones para telas menores */
+    }
+
+    .div-suite p {
+        font-size: 14px;
+        width: 90%;
+        margin-left: 0;
+        text-align: justify;
+    }
+
+    .gallery2-item {
+        height: 150px;
+    }
+
+    .div-reservar h1 {
+        font-size: 20px;
+    }
+
+    .div-reservar p {
+        font-size: 14px;
+    }
+
+    .div-reservar input[type="date"],
+    .div-reservar button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}@media (max-width: 768px) {
+    .div-suite p {
+        padding: 0 5%;
+    }
+
+    .icon-item {
+        font-size: 18px;
+        width: 100px;
+    }
+
+    .gallery2 {
+        padding: 15px;
+    }
+
+    .gallery2-item {
+        height: 180px;
+    }
+
+    .div-reservar {
+        margin: 20px 5%;
+    }
+}
+
+@media (max-width: 480px) {
+    .div-suite h1 {
+        font-size: 28px;
+    }
+
+    .div-suite p {
+        font-size: 14px;
+    }
+
+    .icon-item {
+        font-size: 16px;
+        width: 80px;
+    }
+
+    .gallery2-item {
+        height: 150px;
+    }
+
+    .div-reservar h1 {
+        font-size: 20px;
+    }
+
+    .div-reservar p {
+        font-size: 14px;
+    }
+
+    .div-reservar input[type="date"],
+    .div-reservar button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}

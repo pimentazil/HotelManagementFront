@@ -1,0 +1,132 @@
+.footer{
+    border-top: 1px solid;
+    border-color: var(--black-color);
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    padding: 4% 5%;
+}
+.footer main{
+    display: flex;
+    justify-content: space-between;
+}
+.footer main div{
+    width: 33%;
+}
+.footer section{
+    display: flex;
+}
+
+.footer .ondeEstamos {
+    margin-left: 10%;
+}
+
+p {
+    font-size: 15px;
+}
+
+.footer .contato {
+    margin-left: -15px;
+}
+
+.footer section p {
+    font-size: 14px;
+    margin-top: 5%;
+}
+
+.footer h1{
+    font-size: 25px;
+    margin-right: 50%;
+}
+
+.contatoo img {
+    background-color: var(--black-color);
+    position: absolute;
+}
+
+.contatoo p {
+    margin-left: 10%;
+}
+
+@media (max-width: 1080px)
+ {
+    .footer .title {
+        margin-bottom: 0.95rem;
+        margin-right: -220px;
+        margin-left: 7%;
+    }
+
+    .footer .paragrafo {
+        flex-direction: column;
+        margin-right: -220px;
+        margin-left: 7%;
+
+    }
+
+ 
+    .footer main {
+        display: flex;
+        flex-direction: column;
+        padding: 1.456rem 0px;
+        margin: 0px;
+
+    }
+
+    .footer {
+        margin-right: 50px;
+    }
+
+    .ondeEstamos h1 {
+        margin-left: -24px;
+        position: absolute;
+        margin-top: 3%;
+    }
+
+    .ondeEstamos p {
+        margin-top: 42%;
+        margin-left: -24px;
+        margin-bottom: 15%;
+    }
+
+    .contatoo h1 {
+        margin-left: 24px;
+        margin-top: 8%;
+    }
+
+    .contatoo img {
+        margin-left: 24px;
+
+    }
+
+    .contatoo p {
+        margin-left: 60px;
+    }
+
+    .footer section p {
+        margin-left: 15%;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 2% 4%; /* Reduz o preenchimento em telas menores */
+    }
+
+    .footer h1 {
+        font-size: 18px; /* Reduz o tamanho da fonte para o título */
+        text-align: left;
+    }
+
+    .footer p {
+        font-size: 12px; /* Reduz o tamanho da fonte para parágrafos */
+    }
+
+    .footer main {
+        flex-direction: column; /* Empilha as seções verticalmente em telas pequenas */
+    }
+
+    .contatoo {
+        text-align: left;
+        margin-left: -5%;
+    }
+}

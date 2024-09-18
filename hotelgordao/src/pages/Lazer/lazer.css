@@ -1,0 +1,163 @@
+.div-lazer h1 {
+    margin-top: 8%;
+    text-align: center;
+    color: var(--paragrafos-color);
+    font-weight: 500;
+    font-size: 38px;
+}
+
+.div-lazer p {
+    color: var(--paragrafos-color);
+    text-align: center;
+}
+
+.div-piscina {
+    display: flex; 
+    align-items: center; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    background-color: var(--background-color2);
+    margin-top: 3%;
+}
+
+.div-piscina .info {
+    flex: 1; 
+    padding-right: 20px; 
+}
+
+.div-piscina h1 {
+    color: var(--paragrafos-color);
+    text-align: left;
+    font-size: 25px;
+    margin-top: 0px;
+    margin-left: 30%;
+}
+
+.div-piscina p {
+    text-align: left;
+    margin-right: 30%;
+    margin-left: 25%;
+}
+
+.background-imagem {
+    flex-shrink: 0; 
+    background-image: url('https://lirp.cdn-website.com/e65641d9/dms3rep/multi/opt/_FCH9575PipaLagoa18+%28Copy%29-1920w.jpg');
+    background-size: cover; 
+    background-position: center; 
+    width: 45%; 
+    height: 440px; 
+}
+
+
+.div-espacokids {
+    display: flex; 
+    align-items: center; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    /* background-color: var(--background-color2); */
+}
+
+.div-espacokids .info2 {
+    flex: 1; 
+    display: flex;
+}
+
+.div-espacokids h1 {
+    color: var(--paragrafos-color);
+    text-align: left;
+    font-size: 25px;
+    left: 60%;
+    position: absolute;
+}
+
+.div-espacokids p {
+    text-align: left;
+    margin-top: 11%;
+    position: absolute;
+    left: 55%;
+    right: 15%;
+}
+
+.background-imagem2 {
+    flex-shrink: 0; 
+    background-image: url('https://lirp.cdn-website.com/e65641d9/dms3rep/multi/opt/_FCH0468PipaLagoa18-1920w.jpg');
+    background-size: cover; 
+    background-position: center; 
+    width: 45%; 
+    height: 440px; 
+}
+
+.div-academia {
+    display: flex; 
+    align-items: center; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    background-color: var(--background-color2);
+    margin-top: 0%;
+}
+
+.div-academia .info3 {
+    flex: 1; 
+    padding-right: 20px; 
+}
+
+.div-academia h1 {
+    color: var(--paragrafos-color);
+    text-align: left;
+    font-size: 25px;
+    margin-top: 0px;
+    margin-left: 30%;
+}
+
+.div-academia p {
+    text-align: left;
+    margin-right: 30%;
+    margin-left: 25%;
+}
+
+.background-imagem3 {
+    flex-shrink: 0; 
+    background-image: url('https://lirp.cdn-website.com/e65641d9/dms3rep/multi/opt/Paradise+Pictures-5-1920w.jpg');
+    background-size: cover; 
+    background-position: center; 
+    width: 45%; 
+    height: 440px; 
+}
+
+.div-dj {
+    display: flex; 
+    align-items: center; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    /* background-color: var(--background-color2); */
+}
+
+.div-dj .info4 {
+    flex: 1; 
+    display: flex;
+}
+
+.div-dj h1 {
+    color: var(--paragrafos-color);
+    text-align: left;
+    font-size: 25px;
+    left: 60%;
+    position: absolute;
+}
+
+.div-dj p {
+    text-align: left;
+    margin-top: 11%;
+    position: absolute;
+    left: 55%;
+    right: 15%;
+}
+
+.background-imagem4 {
+    flex-shrink: 0; 
+    background-image: url('https://t3.ftcdn.net/jpg/06/74/55/84/360_F_674558408_ru2tOBRcNzOSju5YlKiEQZCQ6ez52qp9.jpg');
+    background-size: cover; 
+    background-position: center; 
+    width: 45%; 
+    height: 440px; 
+}

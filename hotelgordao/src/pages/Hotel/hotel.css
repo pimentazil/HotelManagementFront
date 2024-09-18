@@ -1,0 +1,177 @@
+/* Estilo base para dispositivos maiores */
+.backgroundImageHotel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(../../images/hotel.jpeg);
+    background-size: cover;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.background-hotel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    padding-left: 8%;
+    padding-top: 0vh;
+    gap: 0%;
+}
+
+.background-hotel h1 {
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 25%;
+    color: white;
+    text-align: left;
+}
+
+.content h1 {
+    text-align: center;
+    margin-top: 5%;
+    color: #6c757d;
+    font-weight: 500;
+}
+
+.content h1 b {
+    color: var(--blue-color);
+}
+
+.content p {
+    color: #6c757d;
+    font-size: 17px;
+    width: 60%;
+    margin: 0 auto;
+    text-align: justify;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.apresentacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    gap: 20px;
+    margin-top: 5%;
+}
+
+.acomodacoes {
+    position: relative;
+    width: 400px; /* Ajuste conforme necessário */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; /* Para que o título não ultrapasse os limites da imagem */
+    border-radius: 10px; /* Ajuste conforme necessário */
+}
+
+.acomodacoes:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.acomodacoes-image {
+    width: 100%;
+    height: 300px; /* Ajuste conforme necessário */
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.acomodacoes h1 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Background semi-transparente */
+    color: white;
+    margin: 0;
+    padding: 10px 0;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.acomodacoes-image.acomodacoes {
+    background-image: url(../../images/acomodacoes.jpg);
+}
+
+.acomodacoes-image.lazer {
+    background-image: url(../../images/acomodacoes.jpg);
+}
+
+.acomodacoes-image.gastronomia {
+    background-image: url(../../images/acomodacoes.jpg);
+}
+
+/* Media queries para dispositivos móveis */
+@media (max-width: 768px) {
+    .background-hotel {
+        padding-left: 5%;
+    }
+
+    .background-hotel h1 {
+        font-size: 35px;
+        margin-bottom: 15%;
+        text-align: center;
+    }
+
+    .content p {
+        width: 90%;
+        font-size: 15px;
+        padding: 15px;
+    }
+
+    .apresentacao {
+        flex-direction: column;
+        padding: 20px 0;
+        gap: 10px;
+    }
+
+    .acomodacoes {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .acomodacoes h1 {
+        font-size: 1.2rem;
+    }
+
+    .acomodacoes-image {
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .background-hotel {
+        padding-left: 2%;
+    }
+
+    .background-hotel h1 {
+        font-size: 25px;
+        margin-top: 50%;
+    }
+
+    .content p {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .apresentacao {
+        padding: 15px 0;
+        gap: 5px;
+    }
+
+    .acomodacoes h1 {
+        font-size: 1rem;
+    }
+
+    .acomodacoes-image {
+        height: 150px;
+    }
+}
